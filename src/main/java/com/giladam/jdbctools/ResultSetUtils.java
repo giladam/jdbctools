@@ -154,7 +154,7 @@ public class ResultSetUtils {
      * @throws SQLException If the columnLabel is not valid; if a database access error occurs or this method is called on a closed result set.
      */
     public static Float getNullableFloat(ResultSet resultSet, String columnLabel) throws SQLException {
-    	float value = resultSet.getFloat(columnLabel);
+        float value = resultSet.getFloat(columnLabel);
         return resultSet.wasNull() ? null : value;
     }
 
@@ -167,7 +167,7 @@ public class ResultSetUtils {
      * @throws SQLException If the columnIndex is not valid; if a database access error occurs or this method is called on a closed result set.
      */
     public static Float getNullableFloat(ResultSet resultSet, int columnIndex) throws SQLException {
-    	float value = resultSet.getFloat(columnIndex);
+        float value = resultSet.getFloat(columnIndex);
         return resultSet.wasNull() ? null : value;
     }
 
@@ -180,7 +180,7 @@ public class ResultSetUtils {
      * @throws SQLException If the columnLabel is not valid; if a database access error occurs or this method is called on a closed result set.
      */
     public static Double getNullableDouble(ResultSet resultSet, String columnLabel) throws SQLException {
-    	double value = resultSet.getDouble(columnLabel);
+        double value = resultSet.getDouble(columnLabel);
         return resultSet.wasNull() ? null : value;
     }
 
